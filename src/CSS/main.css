@@ -1,0 +1,57 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    width: 400px;
+    height: 80px;
+}
+
+.inputform{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+}
+
+
+input{
+    width: 25rem;
+    height: 10%;
+    padding: 10px;
+    outline: none;
+    letter-spacing: 3px;
+}
+
+.trashBtn{
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+
+}
+
+.trashBtn:hover{
+    background-color: yellowgreen;
+}
+
+.editBtn{
+    font-size: 2rem;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+.editBtn:hover{
+    background-color: salmon;
+}
