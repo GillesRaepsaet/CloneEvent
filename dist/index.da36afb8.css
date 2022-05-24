@@ -1,0 +1,158 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 25px;
+  font-family: Open Sans, sans-serif;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  background-color: violet;
+  border: 1px solid #000;
+  border-radius: 5%;
+}
+
+td, th {
+  background-color: violet;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.eventList {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+article {
+  margin-top: 3%;
+}
+
+input {
+  color: #fff;
+  background-color: #000;
+}
+
+.edit-input {
+  width: 300px;
+  height: 250px;
+  background-color: wheat;
+  flex-direction: column;
+  padding: 1rem;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.edit-input.show {
+  display: flex;
+}
+
+.e-input {
+  margin-top: 1rem;
+}
+
+#change, #cancel {
+  padding: 3px;
+}
+
+.input {
+  width: 100%;
+  width: 50%;
+  height: 50%;
+  margin: -top 2rem;
+  border: none;
+  outline: none;
+  flex-direction: row;
+  grid-template-columns: repeat(2, auto);
+  margin: 0 auto;
+  display: grid;
+}
+
+.input .grid {
+  text-align: left;
+  margin: 30px;
+}
+
+.input .grid input {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+button {
+  background-color: #00f;
+  border: none;
+  outline-style: none;
+}
+
+button:hover {
+  background-color: salmon;
+}
+
+button:active {
+  box-shadow: inset -2px -2px 3px #fff9, inset 2px 2px 3px #0009;
+}
+
+header button {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 20px;
+  position: relative;
+  left: -10px;
+}
+
+.addEventDate {
+  display: none;
+}
+
+.sureBtn {
+  width: 300px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  inset: 0;
+}
+
+.red, .green, .null {
+  width: 1vw;
+}
+
+.red {
+  filter: invert(12%) sepia(74%) saturate(4290%) hue-rotate(355deg) brightness(81%) contrast(116%);
+}
+
+.green {
+  filter: invert(29%) sepia(83%) saturate(4577%) hue-rotate(135deg) brightness(95%) contrast(105%);
+}
+
+.null {
+  filter: invert(37%) sepia(0%) saturate(2881%) hue-rotate(205deg) brightness(89%) contrast(81%);
+}
+
+h1 {
+  color: #189fc4;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 45px;
+}
+
+.addMember {
+  margin-left: 5%;
+}
+
+.dark-mode {
+  color: #aaa;
+  background: #0c182c;
+}
+
+/*# sourceMappingURL=index.da36afb8.css.map */

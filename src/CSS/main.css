@@ -1,57 +1,177 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('');
 
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0 5%;
+    font-family: "Open Sans", sans-serif;
+    padding: 25px;
+    
+  }
+  
+  header {
+    text-align: center;
+    width: 100%;
+  }
 
-*{
-    padding: 0;
-    margin: 0;
-}
+  
+  table {
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color:violet;
+  }
+  
+  td,
+  th {
+    padding: 8px;
+    background-color:violet;
+    border-radius:50%;
+  }
+  
+  .eventList {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  article {
+    margin-top: 3%;
+  }
+  
 
-.logo{
-    width: 400px;
-    height: 80px;
-}
-
-.inputform{
+  
+  input{
+    background-color: black;
+    color: white;
+  }
+  
+  .edit-input {
+    width: 300px;
+    height: 250px;
+    background-color: wheat;
     position: absolute;
+    left: 45%;
     top: 30%;
-    left: 25%;
-
-}
-
-
-input{
-    width: 25rem;
-    height: 10%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    display: none;
+  }
+  
+  .edit-input.show {
+    display: flex;
+  }
+  .e-input {
+    margin-top: 1rem;
+  }
+  
+  #change,
+  #cancel {
+    padding: 3px;
+  }
+  .input {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    flex-direction: row;
+    width: 100%;
     outline: none;
-    letter-spacing: 3px;
-}
-
-.trashBtn{
-    font-size: 2rem;
+    border: none;
+  }
+  
+  .input {
+    width: 50%;
+    height: 50%;
+    margin: -top 2rem;
+    margin: 0 auto;
+  }
+  
+  .input .grid {
+    margin: 30px;
+    text-align: left;
+  }
+  .input .grid input {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  
+  button {
+    background-color:blue;
+    border:none;
+    outline-style: none;
+  }
+  button:hover {
+    background-color:salmon;
+  }
+  button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+  }
+  header button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+  }
+  
+  .addEventDate {
+    display: none;
+  }
+  
+  .sureBtn {
+    width: 300px;
+    height: 200px;
     background-color: red;
-    color: white;
-    padding: 10px;
-    outline: none;
-    border:none;
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  
+  .red,
+  .green,
+  .null {
+    width: 1vw;
+  }
+  
+  .red {
+    filter: invert(12%) sepia(74%) saturate(4290%) hue-rotate(355deg)
+      brightness(81%) contrast(116%);
+  }
+  
+  .green {
+    filter: invert(29%) sepia(83%) saturate(4577%) hue-rotate(135deg)
+      brightness(95%) contrast(105%);
+  }
+  
+  .null {
+    filter: invert(37%) sepia(0%) saturate(2881%) hue-rotate(205deg)
+      brightness(89%) contrast(81%);
+  }
+  
 
-}
-
-.trashBtn:hover{
-    background-color: yellowgreen;
-}
-
-.editBtn{
-    font-size: 2rem;
-    background-color: green;
-    color: white;
-    padding: 10px;
-    outline: none;
-    border:none;
-    cursor: pointer;
-}
-
-.editBtn:hover{
-    background-color: salmon;
-}
+  
+  h1 {
+    color: rgb(24, 159, 196);
+    font-size: 45px;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  
+  
+  .addMember {
+    margin-left: 5%;
+  }
+  
+  .dark-mode  {
+    background: hsl(217, 58%,11%);
+    color: #aaa;
+  }
